@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Anna Czerwińska Fotografia</title>
+    <link rel="stylesheet" href="main.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+                document.getElementById("navbar").style.padding = "12px 12px";
+                document.getElementById("logo").style.fontSize = "24px";
+            } else {
+                document.getElementById("navbar").style.padding = "40px 12px";
+                document.getElementById("logo").style.fontSize = "32px";
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar">
+        <a href="index.html" id="logo">Fotografia Anna Czerwińska</a>
+        <div id="navbar-right">
+            <a href="index_architektura.html">Architektura</a>
+            <a href="index_krajobraz.html">Krajobraz</a>
+        </div>
+    </div>
+    <!-- Navbar end -->
+
+
+    <!-- Slider -->
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="1.jpg" style="width:100%;height:auto" alt="Architektura">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="2.jpg" style="width:100%;height:auto" alt="Architektura">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="3.jpg" style="width:100%;height:auto" alt="Architektura">
+
+        </div>
+
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 6000);
+        }
+
+    </script>
+
+    <!-- Slider end -->
+
+
+    <!-- Contact -->
+    <div class="row">
+        <h3 class="header_text">Anna Czerwińska</h3>
+        <div class="column_1">
+            <img src="Anna.jpg" style="width:350px; height:350px" alt="Profile photo" class="profile_photo">
+        </div>
+        <div class="column_2">
+
+            <p>Fotografia jest moją pasją. Fotografuję głównie architekturę oraz krajobrazy. W swoich zdjęciach staram się zawsze uchwycić tą jedną, niepowtarzalną chwilę. Zapraszam do obejrzenia moich zdjęć oraz do nawiązania kontaktu. Fotografia jest moją pasją. Fotografuję głównie architekturę oraz krajobrazy. W swoich zdjęciach staram się zawsze uchwycić tą jedną, niepowtarzalną chwilę. Zapraszam do obejrzenia moich zdjęć oraz do nawiązania kontaktu.</p>
+            <a href="http://www.facebook.com"><button>Facebook</button></a>
+            <a href="http://www.instagram.com"><button>Instagram</button></a>
+        </div>
+    </div>
+
+    <!-- Contact end -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Anna Czerwińska Fotografia</p>
+    </div>
+    <!-- Footer end -->
+
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Anna Czerwińska Fotografia</title>
+    <link rel="stylesheet" href="main_architektura.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+                document.getElementById("navbar").style.padding = "12px 12px";
+                document.getElementById("logo").style.fontSize = "24px";
+            } else {
+                document.getElementById("navbar").style.padding = "40px 12px";
+                document.getElementById("logo").style.fontSize = "32px";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar">
+        <a href="index.html" id="logo">Fotografia Anna Czerwińska</a>
+        <div id="navbar-right">
+            <a class="active" href="index_architektura.html">Architektura</a>
+            <a href="index_krajobraz.html">Krajobraz</a>
+        </div>
+    </div>
+
+    <!-- Navbar end-->
+
+
+    <!-- Photo grid -->
+
+    <div class="photo_gallery" style="font-size:30px">
+        <div class="column">
+            <img src="2.jpg" style="width:100%" alt="Architektura">
+            <img src="3.jpg" style="width:100%" alt="Architektura">
+            <img src="1.jpg" style="width:100%" alt="Architektura">
+            <img src="4.jpg" style="width:100%" alt="Architektura">
+
+        </div>
+        <div class="column">
+            <img src="6.jpg" style="width:100%" alt="Architektura">
+            <img src="7.jpg" style="width:100%" alt="Architektura">
+            <img src="8.jpg" style="width:100%" alt="Architektura">
+            <img src="9.jpg" style="width:100%" alt="Architektura">
+        </div>
+
+    </div>
+
+    <!-- Photo grid end -->
+
+
+    <!-- Contact -->
+    <div class="row">
+        <h3 class="header_text">Anna Czerwińska</h3>
+        <div class="column_1">
+
+            <img src="Anna.jpg" style="width:350px; height=350px" class="profile_photo">
+        </div>
+        <div class="column_2">
+
+            <p>Fotografia jest moją pasją. Fotografuję głównie architekturę oraz krajobrazy. W swoich zdjęciach staram się zawsze uchwycić tą jedną, niepowtarzalną chwilę. Zapraszam do obejrzenia moich zdjęć oraz do nawiązania kontaktu. Fotografia jest moją pasją. Fotografuję głównie architekturę oraz krajobrazy. W swoich zdjęciach staram się zawsze uchwycić tą jedną, niepowtarzalną chwilę. Zapraszam do obejrzenia moich zdjęć oraz do nawiązania kontaktu.</p>
+            <a href="http://www.facebook.com"><button>Facebook</button></a>
+            <a href="http://www.instagram.com"><button>Instagram</button></a>
+        </div>
+    </div>
+
+
+    <!-- Contact end -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Anna Czerwińska Fotografia</p>
+    </div>
+    <!-- Footer end -->
+
+
+
+</body>
+
+</html>
