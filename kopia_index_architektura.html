@@ -3,7 +3,7 @@
 
 <head>
     <title>Anna Czerwińska Fotografia</title>
-    <link rel="stylesheet" href="main_architektura.css">
+    <link rel="stylesheet" href="kopia_main_architektura.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Open+Sans&display=swap" rel="stylesheet">
 
@@ -40,24 +40,66 @@
     <!-- Navbar end-->
 
 
-    <!-- Photo grid -->
 
-    <div class="photo_gallery" style="font-size:30px">
-        <div class="column">
-            <img src="images/2.jpg" style="width:100%" alt="Architektura">
-            <img src="images/3.jpg" style="width:100%" alt="Architektura">
-            <img src="images/1.jpg" style="width:100%" alt="Architektura">
-            <img src="images/4.jpg" style="width:100%" alt="Architektura">
 
-        </div>
-        <div class="column">
-            <img src="images/6.jpg" style="width:100%" alt="Architektura">
-            <img src="images/7.jpg" style="width:100%" alt="Architektura">
-            <img src="images/8.jpg" style="width:100%" alt="Architektura">
-            <img src="images/9.jpg" style="width:100%" alt="Architektura">
-        </div>
+    <!-- Portfolio Gallery Grid -->
 
+  <div class="photo_grid">
+
+
+    <img id="myImg" src="images/1.jpg" alt="Snow" style="width:100%;max-width:300px">
+      <img id="myImg" src="images/1.jpg" alt="Snow" style="width:100%;max-width:300px">
+      <img id="myImg" src="images/1.jpg" alt="Snow" style="width:100%;max-width:300px">
+      <img id="myImg" src="images/1.jpg" alt="Snow" style="width:100%;max-width:300px">
+      <img id="myImg" src="images/1.jpg" alt="Snow" style="width:100%;max-width:300px">
+      <img id="myImg" src="images/1.jpg" alt="Snow" style="width:100%;max-width:300px">
+      <img id="myImg" src="images/1.jpg" alt="Snow" style="width:100%;max-width:300px">
+      <img id="myImg" src="images/1.jpg" alt="Snow" style="width:100%;max-width:300px">
+      <img id="myImg" src="images/1.jpg" alt="Snow" style="width:100%;max-width:300px">
+      
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
     </div>
+  
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        var navbar = document.getElementById("navbar")
+        img.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            navbar.style.display = 'none';
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+            navbar.style.display = "block";
+        }
+
+    </script>
+</div>
+
+
+
+
+
+
+
+
 
     <!-- Photo grid end -->
 
@@ -83,7 +125,7 @@
 
     <!-- Footer -->
     <div class="footer">
-        <h3 class="footer_text">Anna Czerwińska Fotografia</h3>
+        <p>Anna Czerwińska Fotografia</p>
     </div>
     <!-- Footer end -->
 
